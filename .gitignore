@@ -1,0 +1,13 @@
+# 快照是本机 DSH 的运行产物（--dump 生成），不入库
+snapshots/
+
+# 本机审计报告
+report-*.txt
+
+# 依赖
+node_modules/
+
+# 杂项
+*.log
+.DS_Store
+Thumbs.db

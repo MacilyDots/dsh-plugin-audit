@@ -1,0 +1,43 @@
+{
+  "name": "dsh-plugin-audit",
+  "version": "0.1.0",
+  "description": "Audit installed DeepSeek Harness plugins for dependencies on DSH internals (CSS Module hash class names, slot names, CSS variables) that fail silently after a DSH upgrade.",
+  "type": "module",
+  "bin": {
+    "dsh-plugin-audit": "./audit-asar.mjs",
+    "dsh-plugin-audit-live": "./audit.mjs"
+  },
+  "files": [
+    "audit-asar.mjs",
+    "audit.mjs",
+    "remap-classes.mjs",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "audit",
+    "css-module",
+    "regression"
+  ],
+  "license": "MIT",
+  "author": "MacilyDots",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MacilyDots/dsh-plugin-audit.git"
+  },
+  "homepage": "https://github.com/MacilyDots/dsh-plugin-audit#readme",
+  "bugs": {
+    "url": "https://github.com/MacilyDots/dsh-plugin-audit/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node audit-asar.mjs --check remap-classes.mjs",
+    "dump": "node audit-asar.mjs --dump"
+  }
+}
