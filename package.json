@@ -1,6 +1,9 @@
 {
   "name": "dsh-plugin-audit",
   "version": "0.1.0",
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  },
   "description": "Audit installed DeepSeek Harness plugins for dependencies on DSH internals (CSS Module hash class names, slot names, CSS variables) that fail silently after a DSH upgrade.",
   "type": "module",
   "bin": {
